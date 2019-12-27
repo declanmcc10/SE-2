@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class Module {
 
 	private String moduleName = "";
-	private int moduleId;
+	private String moduleId;
 	private List<Student> studentList = new ArrayList<Student>();
 	private List<Course> courses = new ArrayList<Course>();
 	
-	public Module(String name, int moduleId, List<Student> studentList, List<Course> courses) {
+	public Module(String name, String moduleId, List<Student> studentList, List<Course> courses) {
 		this.moduleName = name;
 		this.moduleId = moduleId;
 		this.studentList = studentList;
@@ -24,11 +24,11 @@ public class Module {
 		this.moduleName = moduleName;
 	}
 	
-	public int getModueId() {
+	public String getModueId() {
 		return moduleId;
 	}
 	
-	public void setModuleId(int moduleId) {
+	public void setModuleId(String moduleId) {
 		this.moduleId = moduleId;
 	}
 	

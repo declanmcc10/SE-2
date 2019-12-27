@@ -21,6 +21,12 @@ public class Student {
 		this.dob = dob;
 		this.courses = courses;
 		this.modules = modules;
+		username = genUsername();
+	}
+	
+	public String genUsername() {
+		String username = name + iD;
+		return username;
 	}
 	
 	
@@ -53,6 +59,8 @@ public class Student {
 		return this.modules;
 	}
 	
+
+	
 	////Setters
 	public void setName(String name) {
 		this.name = name;
@@ -69,7 +77,6 @@ public class Student {
 	public void setDob(Date dob) {
 		this.dob = dob;
 	}
-	
 	
 	public void addCourse(Course course) {
 		this.courses.add(course);
