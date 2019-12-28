@@ -70,9 +70,6 @@ class ModuleTest {
 		assertEquals(module.getStudents(), students);
 	}
 
-	@Test
-	void testSetStudentList() {
-		
-	}
+
 
 }
