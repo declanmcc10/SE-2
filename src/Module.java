@@ -24,7 +24,7 @@ public class Module {
 		this.moduleName = moduleName;
 	}
 	
-	public String getModueId() {
+	public String getModuleId() {
 		return moduleId;
 	}
 	

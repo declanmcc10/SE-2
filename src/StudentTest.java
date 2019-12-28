@@ -15,7 +15,7 @@ class StudentTest {
 	private List<Course> courses = new ArrayList<Course>();
 	private List<Module> modules = new ArrayList<Module>();
 	
-	private Course courseFake = new Course("4ECE", students, modules, new Date(24-9-2016), new Date(30-5-2020));
+	private Course courseFake = new Course("4ECE", students, modules, "24-09-2016", "30-5-2020");
 	private Module moduleFake = new Module("Machine Learning", "CT4101", students, courses); 
 
 	@BeforeEach

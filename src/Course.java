@@ -7,18 +7,18 @@ public class Course {
 private String courseCode;
 private List<Student> students = new ArrayList<Student>();
 private List<Module> modules = new ArrayList<Module>();
-private Date startDate = new Date();
-private Date endDate = new Date();
+private String startDate;
+private String endDate;
 
-public Course(String courseCode, List<Student> students, List<Module> modules, Date start, Date end) {
+public Course(String courseCode, List<Student> students, List<Module> modules, String startDate, String endDate) {
 this.courseCode = courseCode;
 this.students = students;
 this.modules = modules;
-this.startDate = start;
-this.endDate = end;
+this.startDate = startDate;
+this.endDate = endDate;
 }
 
-public void setCoureCode(String courseCode) {
+public void setCourseCode(String courseCode) {
 this.courseCode = courseCode;
 }
 
@@ -40,17 +40,17 @@ public List<Module> getModules() {
 return modules;
 }
 
-public void setStartDate(Date newStartDate) {
+public void setStartDate(String newStartDate) {
 this.startDate = newStartDate;
 }
-public Date getStartDate() {
+public String getStartDate() {
 return startDate;
 }
 
-public void setEndDate(Date newEndDate) {
+public void setEndDate(String newEndDate) {
 this.endDate = newEndDate;
 }
-public Date getEndDate() {
+public String getEndDate() {
 return endDate;
 }
 }
